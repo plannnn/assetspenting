@@ -1,0 +1,57 @@
+# Laporan Proyek Machine Learning - Kivlan Khair Wijayanto
+
+## Domain Proyek
+Pada Projek **Machine Learning Terapan Pertama: membuat model Predictive Analysis**, saya menggunakan dataset berdomain ekonomi mengenai prediksi harga mobil Mercedes Benz C-Class.
+
+Latar Belakang pemilihan topik ini berdasarkan penggunaan mobil yang semakin cenderung untuk ke listrik, sehingga penggunaan mobil yang menggunaan bahan bakar alami akan semakin menurun. Oleh karena itu, dengan dibuatnya model prediksi ini, kita dapat memperkirakan harga mobil Mercedes Benz C-Class apabila dijual sebagai mobil bekas. 
+## Business Understanding
+Seiring dengan makin banyaknya jumlah mobil yang ada di muka bumi, penjualan mobil bekas seharusnya menjadi semakin banyak agar jumlah mobil di jalanan tidak semakin banyak. Oleh karena itu, dibuat **model prediksi harga mobil bekas** untuk para pemilik mobil dengan niatan untuk mempermudah dan memberi kecocokan dengan harga yang tersedia di pasaran.
+### Problem Statements
+ - Berapa harga mobil bekas dengan jenis transmisi, jarak tempuh dan ukuran mesin tertentu?
+ - Dari Karekteristik yang tersedia manakah yang paling berpengaruh?
+### Goals
+Membuat model Machine Learning yang dapat memberi prediksi harga mobil bekas dengan karekteristik yang tersedia
+
+### Solution statements
+Solusi yang diajukan antara lain adalah KNN dan Random Forest, yang kemudian dipilih berdasarkan tingkat akurasi yang paling tinggi.
+Sebagai contoh:
+- **KNN/K-Nearest Neighbor**. Algoritma ini merupakan supervised learning dan mengelompokan suatu label dengan cara mencari kesesuaian dengan tetangga terdekat. KNN dipilih karena merupakan algoritma yang cocok dengan kasus regresi
+- **RF/Random Forest**. Algoritma ini adalah supervised learning dan dapat menyelesaikan masalah regresi. Random Forest ini merupakan model yang terdiri dari beberapa model dan bekerja secara bersama-sama dan tiap model membuat prediksi secara independen dan digabungkan untuk membuat prediksi akhir. 
+
+## Data Understanding
+Dataset yang digunakan adalah dataset [*100,000 UK Used Car Data set*](https://www.kaggle.com/adityadesai13/used-car-dataset-ford-and-mercedes?select=cclass.csv) dari situs Kaggle yang berisi data tentang mobil bekas yang terjual di UK dengan variable, mileage, model, engineSize, year, transmission, fuelType, dan price yang menjadi label pada data ini. Dataset ini memiliki 3899 dengan 7 kolom dengan 2 kategorikal dan 5 numerikal.
+
+Variabel pada dataset ini adalah sebagai berikut.
+- model : C-Class
+- mileage : Jarak Tempuh Mobil
+- engineSize: Ukuran Volume Bahan Bakar
+- year : Tahun Pembelian Mobil
+- transmission : Jenis Setelan Transmisi
+- fuelType : Jenis Bahan Bakar
+- Price : Harga 
+
+## Data Preparation
+Pada bagian ini Anda menjelaskan teknik yang digunakan pada tahapan Data Preparation. 
+- Terapkan minimal satu teknik data preparation dan jelaskan proses yang dilakukan.
+- Jelaskan alasan mengapa Anda perlu menerapkan teknik tersebut pada tahap Data Preparation. 
+
+## Modeling
+Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. 
+
+Jelaskan bagaimana Anda melakukan proses modeling dalam proyek. Misalnya, Anda menggunakan satu algoritma kemudian melakukan improvement dari baseline model atau Anda menggunakan dua atau lebih algoritma kemudian membandingkan performanya.
+
+Sajikan model terbaik Anda sebagai solusi.
+Jelaskan pula hasil dari model Anda (misal, hasil prediksi).
+
+## Evaluation
+Bagian ini menjelaskan mengenai metrik evaluasi yang digunakan untuk mengukur kinerja model. Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
+- Penjelasan mengenai metrik yang digunakan dan bagaimana formulanya
+- Kelebihan dan kekurangan metrik
+- Bagaimana cara menerapkannya ke dalam kode.
+
+Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+
+**---Ini adalah bagian akhir laporan---**
+
+_Catatan:_
+_Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
